@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>에러 남!!!</h1>
+<h1>404 에러 남!!!</h1>
 </body>
 </html>

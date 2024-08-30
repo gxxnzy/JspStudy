@@ -10,9 +10,8 @@ String water = request.getParameter("water");
 
 ArrayList<Cart> cart = (ArrayList<Cart>) session.getAttribute("cart");
 
-System.out.println(cart.size());
 int index=1;
-if (cart.size()==0) {
+if (cart == null || cart.isEmpty()) {
     cart = new ArrayList<Cart>();
 }else{
 	index = cart.getLast().getIndex() + 1;

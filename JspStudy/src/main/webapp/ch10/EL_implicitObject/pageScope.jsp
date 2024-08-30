@@ -1,11 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+    
 <%
-session.removeAttribute("id");
-session.removeAttribute("cart");
-response.sendRedirect("index.jsp");
-%>
-
+	pageContext.setAttribute("coffee", "americano");
+%>      
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +11,8 @@ response.sendRedirect("index.jsp");
 <title>Insert title here</title>
 </head>
 <body>
+
+${pageScope.coffee}
 
 </body>
 </html>

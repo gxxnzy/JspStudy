@@ -10,6 +10,11 @@ String creationTimeStr = dateFormat.format(new Date(creationTime));
 
 long lastTime = session.getLastAccessedTime();
 String lastTimeStr = dateFormat.format(new Date(lastTime));
+
+ArrayList<String> lists = new ArrayList<String>();
+lists.add("11");
+lists.add("22");
+session.setAttribute("lists",lists);
 %>
 <!DOCTYPE html>
 <html>
